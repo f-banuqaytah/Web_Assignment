@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top navigation bar -->
+    <nav class="navbar">
+        <a class="logo" href="#home">My Website <span>✧</span></a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="hero section-card">
+            <div class="hero-text">
+                <p class="eyebrow">WELCOME TO MY LITTLE CORNER</p>
+                <h1>Hello, I'm <span class="pink-text">Fatima!</span></h1>
+                <h2>A Management Information System Student</h2>
+                <p>
+                    Welcome to my personal website. I enjoy learning about
+                    technology, discovering new ideas, and developing my skills.
+                </p>
+                <a class="main-button" href="#about">Discover More <span>→</span></a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile-character.jpeg"
+                     alt="My illustrated character sitting behind a laptop">
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="about section-card">
+            <div class="about-photo">
+                <img src="images/personal_pic_cartoon1.PNG" alt="My profile picture">
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">A LITTLE INTRODUCTION</p>
+                <h2>About Me <span class="pink-text">♡</span></h2>
+                <p>
+                    I'm a Management Information System student at 
+                    Al-Rayan University. I'm interested in the connection
+                    between technology and business, and I enjoy learning
+                    how digital systems can solve real-world problems.
+                </p>
+                <div class="personal-details">
+                    <p><strong>Major:</strong> Information Systems Management</p>
+                    <p><strong>University:</strong> Al-Rayan University</p>
+                    <p><strong>Academic Level:</strong> Third Year</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section-card">
+            <p class="eyebrow">WHAT I'M LEARNING</p>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><span>01</span><h3>HTML</h3><p>Building webpage structure.</p></div>
+                <div class="skill-item"><span>02</span><h3>CSS</h3><p>Styling and designing webpages.</p></div>
+                <div class="skill-item"><span>03</span><h3>Databases</h3><p>Learning database concepts and SQL.</p></div>
+                <div class="skill-item"><span>04</span><h3>Problem Solving</h3><p>Analyzing tasks and finding solutions.</p></div>
+            </div>
+            <div class="learning-note">
+                <h3>What I'm Learning Now</h3>
+                <h4>Web Development</h4>
+                <h5>Front-End Fundamentals</h5>
+                <h6>My Current Practice Project</h6>
+                <p>Building this personal website helps me practice HTML structure and CSS styling.</p>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section-card">
+            <p class="eyebrow">MY ACADEMIC JOURNEY</p>
+            <h2 class="section-title">Educational Background</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institution</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>High School</td>
+                        <td>The First High School At Al-Dammam</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor's Degree</td>
+                        <td>Al-Rayan University At Hadhramout</td>
+                        <td>In Progress</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- HOBBIES SECTION -->
+        <section id="hobbies" class="section-card hobbies-section">
+            <div>
+                <p class="eyebrow">THINGS I ENJOY</p>
+                <h2 class="section-title">My Hobbies & Interests</h2>
+                <p>Here are some activities I enjoy in my free time:</p>
+            </div>
+
+            <div class="hobby-columns">
+                <div>
+                    <h3>My Hobbies</h3>
+                    <ul>
+                        <li>Reading and learning</li>
+                        <li>Exploring technology</li>
+                        <li>Creative design</li>
+                        <li>Drawing and skeching</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>My Goals</h3>
+                    <ol>
+                        <li>Improve my programming skills</li>
+                        <li>Build useful digital projects</li>
+                        <li>Continue learning new things</li>
+                    </ol>
+                </div>
+            </div>
+            <p class="quote">“Keep learning, keep growing.”</p>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-card contact-section">
+            <div class="contact-intro">
+                <p class="eyebrow">LET'S KEEP IN TOUCH</p>
+                <h2 class="section-title">Contact Me</h2>
+                <p>Have a question or want to say hello? Send me a message.</p>
+                <p><strong>Email:</strong> your-email@example.com</p>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row">
+                    <input type="text" name="full-name" placeholder="Full Name"
+                           aria-label="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address"
+                           aria-label="Email Address" required>
+                </div>
+
+                <input type="text" name="subject" placeholder="Subject"
+                       aria-label="Subject" required>
+
+                <textarea name="message" rows="5" placeholder="Your Message"
+                          aria-label="Message" required></textarea>
+
+                <button type="submit">Send Message →</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 My Personal Website. All rights reserved.</p>
+        <p>Made with love<span>♡</span> and creativity.</p>
+    </footer>
+
+</body>
+</html>
